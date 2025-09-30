@@ -4,10 +4,15 @@ import veg from '../assets/vegis.svg'
 import a from '../assets/a.svg'
 import b from '../assets/b.svg'
 import c from '../assets/c.svg'
+import { useNavigate } from 'react-router-dom'
 
 const LandingPage = ()=>{
+    const navigate =useNavigate()
+
+    
+
     return(
-        <div className='min-h-screen bg-gray-50'>
+        <div className='min-h-full bg-gray-50'>
         <header className='flex justify-between items-center px-8 py-4 bg-white shadow-xl'>
             <div className='flex items-center space-x-2'>
                 <img src={logo} className='w-20 h-15' alt="logo" />
@@ -19,10 +24,14 @@ const LandingPage = ()=>{
               <a href='#feature' className='hover:text-green-600 font-bold'>Contributions</a>
             </nav>
             <div className='gap-2 flex'>
-            <button className='border-2 border-green-700 bg-gray-100 p-2 rounded-xl text-green-700 font-semibold hover:bg-green-700 hover:text-white cursor-pointer '>
+            <button className='border-2 border-green-700 bg-gray-100 p-2 rounded-xl text-green-700 font-semibold hover:bg-green-700 hover:text-white cursor-pointer '
+            onClick={()=>navigate('/login')}
+            >
                 Log In
             </button>
-            <button className='border-2 border-green-700 bg-gray-100 p-2 rounded-xl text-green-700 font-semibold hover:bg-green-700 hover:text-white cursor-pointer '>
+            <button className='border-2 border-green-700 bg-gray-100 p-2 rounded-xl text-green-700 font-semibold hover:bg-green-700 hover:text-white cursor-pointer '
+            onClick={()=>navigate('/register')}
+            >
                 Sign Up
             </button>
             </div>
