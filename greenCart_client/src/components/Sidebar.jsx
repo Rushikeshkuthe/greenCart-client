@@ -19,7 +19,7 @@ const Sidebar=()=>{
                 <Link to='/farmerDash' className='flex items-center gap-3 hover:bg-green-600 p-2 rounded-md'>
                 <FaHome/> Dashboard
                 </Link>
-                <Link to='/product' className='flex items-center gap-3 hover:bg-green-600 p-2 rounded-md'>
+                <Link to='/myProduct' className='flex items-center gap-3 hover:bg-green-600 p-2 rounded-md'>
                 <FaBox/> My Product
                 </Link>
                 <Link to='/orders' className='flex items-center gap-3 hover:bg-green-600 p-2 rounded-md'>
