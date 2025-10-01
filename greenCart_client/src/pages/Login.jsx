@@ -1,9 +1,10 @@
 import React from 'react'
 import farm from '../assets/farm.png'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 
 const Login=()=>{
+    const navigate = useNavigate()
     return(
         <div className='h-screen w-screen flex items-center justify-center bg-cover bg-center'
         style={{backgroundImage: `url(${farm})`}}
@@ -30,7 +31,9 @@ const Login=()=>{
                     Forget Password
                 </a>
             </div>
-            <button className='w-full bg-green-600 text-white py-2  rounded-lg font-semibold hover:bg-green-700 transition'>
+            <button className='w-full bg-green-600 text-white py-2  rounded-lg font-semibold hover:bg-green-700 transition'
+            onClick={()=>{navigate('/farmerDash')}}
+            >
                 Log In
             </button>
         </form>
