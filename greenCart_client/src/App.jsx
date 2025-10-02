@@ -5,6 +5,8 @@ import Login from './pages/Login'
 import Register from './pages/Register'
 import FarmerDash from './pages/FarmerDash'
 import Myproduct from './pages/Myproduct'
+import AddProduct from './pages/AddProduct'
+import FarmerOrder from './pages/FarmerOrder'
 
 function App() {
   
@@ -18,6 +20,8 @@ function App() {
             <Route path='/register' element={<Register/>}/>
             <Route path='/farmerDash' element={<FarmerDash/>}/>
             <Route path='/myProduct' element={<Myproduct/>}/>
+            <Route path='/addProduct' element={<AddProduct/>}/>
+            <Route path='/farmerOrder' element={<FarmerOrder/>}/>
         </Routes>
       </div>
      

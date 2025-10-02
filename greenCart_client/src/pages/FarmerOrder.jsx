@@ -1,0 +1,60 @@
+import React from 'react'
+import MainLayout from '../layouts/MainLayout'
+
+const FarmerOrder =() =>{
+     const orders = [
+    {
+      id: 1,
+      buyerName: "Rahul Sharma",
+      productName: "Tomatoes",
+      quantity: "20kg",
+      amount: "₹600",
+      location: "Nagpur, Maharashtra",
+      date: "2025-10-01",
+    },
+    {
+      id: 2,
+      buyerName: "Priya Patel",
+      productName: "Potatoes",
+      quantity: "50kg",
+      amount: "₹1000",
+      location: "Pune, Maharashtra",
+      date: "2025-09-28",
+    },
+    {
+      id: 3,
+      buyerName: "Amit Verma",
+      productName: "Onions",
+      quantity: "30kg",
+      amount: "₹1200",
+      location: "Mumbai, Maharashtra",
+      date: "2025-09-25",
+    },
+  ];
+    return(
+        <MainLayout>
+            <h2 className='text-3xl font-bold text-green-700 mb-6'>Orders</h2>
+            <div className='p-1 grid grid-cols-1 overflow-x-auto'>
+            <div className='overflow-x-auto bg-white rounded-xl shadow-lg '>
+                <table className='min-w-full text-center'>
+                    <thead className='bg-green rounded-2xl'>
+                        <tr>
+                            <th className='p-3'>Buyer Name</th>
+                            <th className='p-3'>Product Name</th>
+                            <th className='p-3'>Quantity</th>
+                            <th className='p-3'>Amount</th>
+                            <th className='p-3'>Location</th>
+                            <th className='p-3'>date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+            </div>
+        </MainLayout>
+    )
+}
+
+export default FarmerOrder

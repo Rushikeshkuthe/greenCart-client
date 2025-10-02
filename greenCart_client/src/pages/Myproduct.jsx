@@ -1,12 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import MainLayout from "../layouts/MainLayout";
 import potato from "../assets/potato.svg";
 import tomato from "../assets/tomato.svg";
 import onion from "../assets/onion.svg";
 import { FiEdit2 } from "react-icons/fi";
 import { MdDeleteOutline } from "react-icons/md";
+import { useNavigate } from "react-router-dom";
 
 const Myproduct = () => {
+
+  const navigate = useNavigate()
+
   const products = [
     {
       id: 1,
@@ -41,14 +45,17 @@ const Myproduct = () => {
     <MainLayout>
       <h2 className="text-3xl font-bold text-green-700 mb-6">My Products</h2>
       <div className="p-1 grid grid-cols-1 overflow-x-auto">
-        <div className="flex items-center justify-end mb-6">
-          <button className="bg-green-600 hover:bg-green-700 text-white p-4 rounded-2xl">
+      {/* button */}
+        {/* <div className="flex items-center justify-end mb-6">
+          <button className="bg-green-600 hover:bg-green-700 text-white p-4 rounded-2xl"
+          onClick={()=>navigate('/addProduct')}
+          >
             Add New Product
           </button>
-        </div>
+        </div> */}
         <div className="overflow-x-auto bg-white rounded-xl shadow-lg ">
           <table className="min-w-full text-center ">
-            <thead className="bg-green-100">
+            <thead className="bg-green-100 rounded-2xl">
               <tr>
                 <th className="p-3">Image</th>
                 <th className="p-3">Name</th>
@@ -92,6 +99,8 @@ const Myproduct = () => {
           </table>
         </div>
       </div>
+
+
     </MainLayout>
   );
 };
