@@ -55,7 +55,7 @@ const Myproduct = () => {
         </div> */}
         <div className="overflow-x-auto bg-white rounded-xl shadow-lg ">
           <table className="min-w-full text-center ">
-            <thead className="bg-green-100 rounded-2xl">
+            <thead className="bg-green-200 rounded-2xl">
               <tr>
                 <th className="p-3">Image</th>
                 <th className="p-3">Name</th>
@@ -68,7 +68,7 @@ const Myproduct = () => {
             </thead>
             <tbody>
               {products.map((p) => (
-                <tr key={p.id} className=" border-b border-gray-300 hover:bg-gray-100">
+                <tr key={p.id} className=" border-b border-gray-300 hover:bg-green-100">
                   <td className="p-3">
                     <img src={p.image} alt={p.name} className=" w-12 h-12 rounded-md object-cover"/>
                   </td>

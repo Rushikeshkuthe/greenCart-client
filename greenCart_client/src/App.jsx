@@ -7,6 +7,8 @@ import FarmerDash from './pages/FarmerDash'
 import Myproduct from './pages/Myproduct'
 import AddProduct from './pages/AddProduct'
 import FarmerOrder from './pages/FarmerOrder'
+import FarmerPayment from './pages/FarmerPayment'
+import FarmerSettings from './pages/FarmerSettings'
 
 function App() {
   
@@ -22,6 +24,8 @@ function App() {
             <Route path='/myProduct' element={<Myproduct/>}/>
             <Route path='/addProduct' element={<AddProduct/>}/>
             <Route path='/farmerOrder' element={<FarmerOrder/>}/>
+            <Route path='/farmerPayment' element={<FarmerPayment/>}/>
+            <Route path='/farmerSettings' element={<FarmerSettings/>}/>
         </Routes>
       </div>
      

@@ -37,18 +37,27 @@ const FarmerOrder =() =>{
             <div className='p-1 grid grid-cols-1 overflow-x-auto'>
             <div className='overflow-x-auto bg-white rounded-xl shadow-lg '>
                 <table className='min-w-full text-center'>
-                    <thead className='bg-green rounded-2xl'>
+                    <thead className='bg-green-200 rounded-2xl'>
                         <tr>
                             <th className='p-3'>Buyer Name</th>
                             <th className='p-3'>Product Name</th>
                             <th className='p-3'>Quantity</th>
                             <th className='p-3'>Amount</th>
                             <th className='p-3'>Location</th>
-                            <th className='p-3'>date</th>
+                            <th className='p-3'>Date</th>
                         </tr>
                     </thead>
                     <tbody>
-
+                    {orders.map((p)=>(
+                        <tr key={p.id} className='border-b border-gray-300 hover:bg-green-100'>
+                            <td className='p-3'>{p.buyerName}</td>
+                            <td className='p-3'>{p.productName}</td>
+                            <td className='p-3'>{p.quantity}</td>
+                            <td className='p-3'>{p.amount}</td>
+                            <td className='p-3'>{p.location}</td>
+                            <td className='p-3'>{p.date}</td>
+                        </tr>
+                    ))}
                     </tbody>
                 </table>
             </div>

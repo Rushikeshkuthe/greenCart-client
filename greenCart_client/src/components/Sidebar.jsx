@@ -22,16 +22,16 @@ const Sidebar=()=>{
                 <Link to='/myProduct' className='flex items-center gap-3 hover:bg-green-600 p-2 rounded-md'>
                 <FaBox/> My Product
                 </Link>
-                <Link to='/orders' className='flex items-center gap-3 hover:bg-green-600 p-2 rounded-md'>
+                <Link to='/farmerOrder' className='flex items-center gap-3 hover:bg-green-600 p-2 rounded-md'>
                 <FaShoppingCart/> Orders
                 </Link>
                 <Link to='/addProduct' className='flex items-center gap-3 hover:bg-green-600 p-2 rounded-md'>
                 <FaPlus/> Add Product
                 </Link>
-                <Link to='/payment' className='flex items-center gap-3 hover:bg-green-600 p-2 rounded-md'>
+                <Link to='/farmerPayment' className='flex items-center gap-3 hover:bg-green-600 p-2 rounded-md'>
                 <FaMoneyBill/> Payments
                 </Link>
-                <Link to='/setting' className='flex items-center gap-3 hover:bg-green-600 p-2 rounded-md'>
+                <Link to='/farmerSettings' className='flex items-center gap-3 hover:bg-green-600 p-2 rounded-md'>
                 <FaCog/> Settings
                 </Link>
             </nav>       

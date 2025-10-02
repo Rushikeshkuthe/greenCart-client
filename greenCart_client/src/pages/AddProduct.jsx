@@ -21,7 +21,7 @@ const AddProduct = () => {
 
   return (
     <MainLayout>
-      <div className="max-w-2xl mx-auto bg-white p-8 shadow-lg rounded-2xl ">
+      <div className=" max-w-2xl mx-auto bg-white p-8 shadow-lg rounded-2xl ">
         <h2 className="text-3xl font-bold text-green-700 mb-6 text-center">
           Add New Product
         </h2>
