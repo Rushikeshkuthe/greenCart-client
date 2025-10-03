@@ -1,11 +1,15 @@
 import React from 'react'
+import BannerSlider from '../components/BannerSlider'
 
 const BuyerDash = () =>{
 
     return(
-        <h1>
-            Buyer Dash
-        </h1>
+        <div>
+            <div>
+                {/* Navbar */}
+            </div>
+           <BannerSlider/>
+        </div>
     )
 }
 
