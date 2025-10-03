@@ -30,7 +30,7 @@ const BannerSlider = () => {
             <img
               src={banner.img}
               alt="Form banner"
-              className="w-full h-62 object-cover"
+              className="w-full h-90 object-cover"
             />
             <div className="absolute inset-0 bg-black/30 flex flex-col items-center justify-center text-white">
               <h2 className="text-2xl md:text-3xl font-bold">
