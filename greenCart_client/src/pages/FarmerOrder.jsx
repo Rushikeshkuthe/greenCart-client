@@ -10,6 +10,7 @@ const FarmerOrder =() =>{
       quantity: "20kg",
       amount: "₹600",
       location: "Nagpur, Maharashtra",
+      status:'On the Way',
       date: "2025-10-01",
     },
     {
@@ -19,6 +20,7 @@ const FarmerOrder =() =>{
       quantity: "50kg",
       amount: "₹1000",
       location: "Pune, Maharashtra",
+       status:'Delivered',
       date: "2025-09-28",
     },
     {
@@ -28,6 +30,7 @@ const FarmerOrder =() =>{
       quantity: "30kg",
       amount: "₹1200",
       location: "Mumbai, Maharashtra",
+       status:'Delivered',
       date: "2025-09-25",
     },
   ];
@@ -44,6 +47,7 @@ const FarmerOrder =() =>{
                             <th className='p-3'>Quantity</th>
                             <th className='p-3'>Amount</th>
                             <th className='p-3'>Location</th>
+                            <th className='p-3'>Status</th>
                             <th className='p-3'>Date</th>
                         </tr>
                     </thead>
@@ -55,6 +59,7 @@ const FarmerOrder =() =>{
                             <td className='p-3'>{p.quantity}</td>
                             <td className='p-3'>{p.amount}</td>
                             <td className='p-3'>{p.location}</td>
+                            <td className={`p-3 font-semibold ${p.status==='Delivered'?'text-green-600':'text-yellow-600'}`}>{p.status}</td>
                             <td className='p-3'>{p.date}</td>
                         </tr>
                     ))}

@@ -9,6 +9,7 @@ import AddProduct from './pages/AddProduct'
 import FarmerOrder from './pages/FarmerOrder'
 import FarmerPayment from './pages/FarmerPayment'
 import FarmerSettings from './pages/FarmerSettings'
+import BuyerDash from './pages/BuyerDash'
 
 function App() {
   
@@ -26,6 +27,7 @@ function App() {
             <Route path='/farmerOrder' element={<FarmerOrder/>}/>
             <Route path='/farmerPayment' element={<FarmerPayment/>}/>
             <Route path='/farmerSettings' element={<FarmerSettings/>}/>
+              <Route path='/buyerDash' element={<BuyerDash/>}/>
         </Routes>
       </div>
      
