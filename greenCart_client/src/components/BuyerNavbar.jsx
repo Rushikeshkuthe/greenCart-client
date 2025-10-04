@@ -3,10 +3,12 @@ import logo from '../assets/capture.svg'
 import { FaShoppingCart, FaUserCircle } from 'react-icons/fa'
 import { IoLocationSharp } from 'react-icons/io5'
 import { Avatar, IconButton, Menu, MenuItem } from '@mui/material'
+import { useNavigate } from 'react-router-dom'
 
 
 
 const BuyerNavbar = () =>{
+    const navigate =useNavigate()
     
     const [anchorE1 ,setAnchorE1] = useState(null)
     const open =Boolean(anchorE1)
@@ -34,10 +36,10 @@ const BuyerNavbar = () =>{
             </div>
             <div className='flex items-center space-x-6'>
                 <div className='flex items-center cursor-pointer'>
-                <IoLocationSharp className='text-xl'/>
+                <IoLocationSharp className='text-xl' />
                 <span className='ml-1'>Set Location</span>
                 </div>
-                <FaShoppingCart className='text-2xl cursor-pointer'/>
+                <FaShoppingCart className='text-2xl cursor-pointer'onClick={()=>navigate('/mycart')}/>
                 {/* <FaUserCircle className='text-2xl cursor-pointer'/> */}
 
                 <div>

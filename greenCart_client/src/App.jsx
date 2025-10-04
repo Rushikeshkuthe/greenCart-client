@@ -10,6 +10,7 @@ import FarmerOrder from './pages/FarmerOrder'
 import FarmerPayment from './pages/FarmerPayment'
 import FarmerSettings from './pages/FarmerSettings'
 import BuyerDash from './pages/BuyerDash'
+import MyCart from './pages/MyCart'
 
 function App() {
   
@@ -28,6 +29,7 @@ function App() {
             <Route path='/farmerPayment' element={<FarmerPayment/>}/>
             <Route path='/farmerSettings' element={<FarmerSettings/>}/>
               <Route path='/buyerDash' element={<BuyerDash/>}/>
+              <Route path='/mycart' element={<MyCart/>}/>
         </Routes>
       </div>
      
