@@ -17,7 +17,12 @@ const BuyerNavbar = () =>{
         setAnchorE1(event.currentTarget)
     }
 
-    const handleClose =()=>{
+    const handleClose=()=>{
+        setAnchorE1(null)
+    }
+
+    const handleCloseOrders =()=>{
+        navigate('/myOrder')
         setAnchorE1(null)
     }
 
@@ -61,7 +66,7 @@ const BuyerNavbar = () =>{
                 }}
                 >
                     <MenuItem onClick={handleClose}>Profile</MenuItem>
-                    <MenuItem onClick={handleClose}>My Orders</MenuItem>
+                    <MenuItem onClick={handleCloseOrders}>My Orders</MenuItem>
                     <MenuItem onClick={handleClose} >Payments</MenuItem>
                      <MenuItem onClick={handleClose} sx={{color:'red'}}>Logout</MenuItem>
                 </Menu>
