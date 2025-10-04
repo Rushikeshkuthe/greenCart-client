@@ -8,6 +8,7 @@ import {
 } from "@mui/material";
 import React, { useState } from "react";
 import { IoSearchCircleOutline } from "react-icons/io5";
+import BuyerNavbar from "../components/BuyerNavbar";
 
 const MyOrders = () => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -50,6 +51,8 @@ const MyOrders = () => {
   });
 
   return (
+    <div>
+        <BuyerNavbar/>
     <div className="p-6 min-h-screen bg-gray-50">
       <h2 className="text-3xl font-bold text-green-700 mb-6">My Orders</h2>
 
@@ -143,6 +146,7 @@ const MyOrders = () => {
        
       </div>
 
+    </div>
     </div>
   );
 };
