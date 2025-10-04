@@ -110,6 +110,39 @@ const MyOrders = () => {
           </Select>
         </FormControl>
       </div>
+
+      <div className="grid gap-4 ">
+        {filteredOrders.map((order) => (
+          <div
+            key={order.id}
+            className="bg-white p-5 rounded-lg shadow-md flex flex-col md:flex-row justify-between items-start md:items-center"
+          >
+            <div>
+              <h3 className="font-semibold text-lg">{order.product}</h3>
+              <p className="text-gray-600 text-sm">📍 {order.address}</p>
+              <p className="text-gray-500 text-sm">🗓 {order.date}</p>
+            </div>
+
+            <div className="text-right mt-3 md:mt-0">
+              <p className="font-semibold text-green-700">₹{order.amount}</p>
+              <p
+                className={`mt-1 text-sm font-medium ${
+                  order.status === "Delivered"
+                    ? "text-green-600"
+                    : order.status === "Pending"
+                    ? "text-yellow-600"
+                    : "text-red-600"
+                }`}
+              >
+                {order.status}
+              </p>
+            </div>
+          </div>
+        ))}
+
+       
+      </div>
+
     </div>
   );
 };
