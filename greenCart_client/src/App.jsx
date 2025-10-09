@@ -15,6 +15,7 @@ import MyOrders from "./pages/MyOrders";
 import BuyerPayment from "./pages/BuyerPayment";
 import ProductDetails from "./pages/ProductDetail";
 import BuyerProfile from "./pages/BuyerProfile";
+import Payment from "./pages/Payment";
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
           <Route path='/buyerPayment' element={<BuyerPayment/>}/>
           <Route path='/productDetails/:id' element={<ProductDetails/>}/>
            <Route path='/buyerProfile' element={<BuyerProfile/>}/>
+           <Route path='/payment' element={<Payment/>}/>
         </Routes>
       </div>
     </Router>
