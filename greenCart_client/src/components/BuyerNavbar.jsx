@@ -18,11 +18,22 @@ const BuyerNavbar = () =>{
     }
 
     const handleClose=()=>{
+         navigate('/login')
         setAnchorE1(null)
     }
 
     const handleCloseOrders =()=>{
         navigate('/myOrder')
+        setAnchorE1(null)
+    }
+
+    const handleClosePayments =()=>{
+        navigate('/buyerPayment')
+        setAnchorE1(null)
+    }
+
+    const handleCloseProfile =()=>{
+        navigate('/buyerProfile')
         setAnchorE1(null)
     }
 
@@ -65,9 +76,9 @@ const BuyerNavbar = () =>{
                     },
                 }}
                 >
-                    <MenuItem onClick={handleClose}>Profile</MenuItem>
+                    <MenuItem onClick={handleCloseProfile}>Profile</MenuItem>
                     <MenuItem onClick={handleCloseOrders}>My Orders</MenuItem>
-                    <MenuItem onClick={handleClose} >Payments</MenuItem>
+                    <MenuItem onClick={handleClosePayments} >Payments</MenuItem>
                      <MenuItem onClick={handleClose} sx={{color:'red'}}>Logout</MenuItem>
                 </Menu>
                 </div>

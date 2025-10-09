@@ -12,6 +12,9 @@ import FarmerSettings from "./pages/FarmerSettings";
 import BuyerDash from "./pages/BuyerDash";
 import MyCart from "./pages/MyCart";
 import MyOrders from "./pages/MyOrders";
+import BuyerPayment from "./pages/BuyerPayment";
+import ProductDetails from "./pages/ProductDetail";
+import BuyerProfile from "./pages/BuyerProfile";
 
 function App() {
   return (
@@ -30,6 +33,9 @@ function App() {
           <Route path="/buyerDash" element={<BuyerDash />} />
           <Route path="/mycart" element={<MyCart />} />
           <Route path="/myOrder" element={<MyOrders />} />
+          <Route path='/buyerPayment' element={<BuyerPayment/>}/>
+          <Route path='/productDetails/:id' element={<ProductDetails/>}/>
+           <Route path='/buyerProfile' element={<BuyerProfile/>}/>
         </Routes>
       </div>
     </Router>
